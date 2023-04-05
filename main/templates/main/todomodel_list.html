@@ -1,0 +1,12 @@
+{% extends 'main/template.html' %}
+
+{% block title %} Список дел {% endblock %}
+
+{% block content %}
+    <h1>Список дел</h1>
+    <ul>
+        {% for task in task_list %}
+            <li><a href="/detail_task/{{ task.id }}">{{task.task_name}} {{task.status}}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'main/template.html' %}
+
+{% block title %} Добавление статьи {% endblock %}
+
+{% block content %}
+    <h1>Добавить статью</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Создать запись">
+    </form>
+{% endblock %}
