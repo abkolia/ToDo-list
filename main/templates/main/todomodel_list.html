@@ -4,9 +4,14 @@
 
 {% block content %}
     <h1>Список дел</h1>
+    <a href="{% url 'main:create_page' %}">Создать задачу</a>
     <ul>
         {% for task in task_list %}
-            <li><a href="/detail_task/{{ task.id }}">{{task.task_name}} {{task.status}}</a></li>
+            <li>
+                <a href="/detail_task/{{ task.id }}">{{task.task_name}} {{task.status}}</a>
+                <a href="/update_task/{{ task.id }}">Редактировать задачу</a>
+                <a href="/delete_task/{{ task.id }}">Удалить задачу</a>
+            </li>
         {% endfor %}
     </ul>
 {% endblock %}

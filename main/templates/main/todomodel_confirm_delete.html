@@ -1,0 +1,11 @@
+{% extends 'main/template.html' %}
+
+{% block title %} Подтвердите удаление! {% endblock %}
+
+{% block content %}
+    <h1>Вы уверенны что хотетие удалить задачу: {{task.task_name}}</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Удалить задачу">
+    </form>
+{% endblock %}
