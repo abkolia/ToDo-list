@@ -3,6 +3,14 @@
 {% block title %} Список дел {% endblock %}
 
 {% block content %}
+    {% if request.user.is_authenticated %}
+        <p>{{ request.user }}</p>
+        <a href="{% url 'main:logout_page' %}">Выйти</a>
+    {% else %}
+        <a href="{% url 'main:login_page' %}">Войти</a>
+    {% endif %}
+
+    <hr>
     <h1>Список дел</h1>
     <a href="{% url 'main:create_page' %}">Создать задачу</a>
     <ul>
