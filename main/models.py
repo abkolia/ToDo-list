@@ -6,7 +6,7 @@ class TodoModel(models.Model):
     )
 
     task_name = models.CharField(max_length=30)
-    desc = models.CharField(max_length=400)
+    desc = models.TextField(null=True, blank=True)
 
     is_completed = models.BooleanField(default=False)
 

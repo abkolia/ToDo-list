@@ -3,6 +3,7 @@
 {% block title %} Добавление статьи {% endblock %}
 
 {% block content %}
+    <a href="{% url 'main:list_page' %}">Назад</a>
     <h1>Добавить статью</h1>
     <form method="post">
         {% csrf_token %}

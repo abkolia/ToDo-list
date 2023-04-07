@@ -9,4 +9,6 @@
         {{ form.as_p }}
         <input type="submit" value="Войти">
     </form>
+
+    <p>Нет аккаунта? <a href="{% url 'main:register_page' %}">Создать аккаунт</a></p>
 {% endblock %}
