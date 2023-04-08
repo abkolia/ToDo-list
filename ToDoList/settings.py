@@ -123,6 +123,10 @@ LOGIN_URL = 'main:login_page'
 
 STATIC_URL = 'static/'
 
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 

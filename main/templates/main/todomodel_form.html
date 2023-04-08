@@ -1,13 +1,16 @@
 {% extends 'main/template.html' %}
 
-{% block title %} Добавление статьи {% endblock %}
-
 {% block content %}
-    <a href="{% url 'main:list_page' %}">Назад</a>
-    <h1>Добавить статью</h1>
+
+<div class="header-bar">
+    <a href="{% url 'main:list_page' %}">&#8592; Go back</a>
+</div>
+
+<div class="card-body">
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <input type="submit" value="Создать запись">
+        <input class="button" type="submit" value="Подтверидить">
     </form>
+</div>
 {% endblock %}

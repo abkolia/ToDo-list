@@ -1,14 +1,15 @@
 {% extends 'main/template.html' %}
 
-{% block title %} Войти в аккаунт {% endblock %}
-
 {% block content %}
-    <h1>Войти</h1>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="Войти">
-    </form>
-
-    <p>Нет аккаунта? <a href="{% url 'main:register_page' %}">Создать аккаунт</a></p>
+    <div class="header-bar">
+        <h1>Login</h1>
+    </div>
+    <div class="card-body">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input class="button" type="submit" value="Submit">
+        </form>
+    <p>No account?<a href="{% url 'main:register_page' %}"> <span style="color: #88eb6f;">Create an account</span></a></p>
+    </div>
 {% endblock %}

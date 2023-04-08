@@ -11,4 +11,4 @@ class TodoModel(models.Model):
     is_completed = models.BooleanField(default=False)
 
     def __str__(self):
-        return f'Задача: {self.task_name}, описание: {self.desc}, статус: {self.is_completed}'
+        return f'Task: {self.task_name}, description: {self.desc}, status: {self.is_completed}'

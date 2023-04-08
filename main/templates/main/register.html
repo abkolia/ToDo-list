@@ -1,14 +1,20 @@
 {% extends 'main/template.html' %}
 
-{% block title %} Регистрация {% endblock %}
-
 {% block content %}
-    <h1>Регистрация</h1>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="Зарегистрироваться">
-    </form>
-
-    <p>Уже есть аккаунт? <a href="{% url 'main:login_page' %}">Войти</a></p>
+    <div class="header-bar">
+        <h1>Registration</h1>
+    </div>
+    <div class="card-body">
+        <form method="post">
+            {% csrf_token %}
+            <label>{{form.username.label}}</label>
+            {{form.username}}
+            <label>{{form.password1.label}}</label>
+            {{form.password1}}
+            <label>{{form.password2.label}}</label>
+            {{form.password2}}
+            <input style="margin-top: 10px;" class="button" type="submit" value="Register">
+        </form>
+        <p>Do you already have an account? <a href="{% url 'main:login_page' %}"><span style="color: #88eb6f;">Login</span></a></p>  
+    </div>
 {% endblock %}

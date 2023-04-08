@@ -1,11 +1,14 @@
 {% extends 'main/template.html' %}
 
-{% block title %} Подтвердите удаление! {% endblock %}
-
 {% block content %}
-    <h1>Вы уверенны что хотетие удалить задачу: {{task.task_name}}</h1>
-    <form action="" method="post">
-        {% csrf_token %}
-        <input type="submit" value="Удалить задачу">
-    </form>
+    <div class="header-bar">
+        <a href="{% url 'main:list_page' %}">&#8592; Go back</a>
+    </div>
+    <div class="card-body">
+        <h1>Are you sure you want to delete the task?</h1>
+        <form action="" method="post">
+            {% csrf_token %}
+            <input class='button' type="submit" value="Удалить задачу">
+        </form>
+    </div>
 {% endblock %}
