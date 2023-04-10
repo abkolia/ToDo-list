@@ -40,9 +40,9 @@
                     </div>
                     <a class="delete-link" href="/delete_task/{{ task.id }}">&#215;</a>
                 {% endif %}
+                {% empty %}
+                <h3 style="padding: 10px 0 10px 10px;">You don't have any tasks, create a new one!</h3>
             </div>
-        {% empty %}
-            <h3>You don't have any tasks, create a new one!</h3>
         {% endfor %}
     </div>
         
