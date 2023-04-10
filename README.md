@@ -14,11 +14,14 @@
 
 ## About
 
-About Text Here
+Simple ToDo List made on django.
 
-## Documentation
-
-Documentation Here
+The functionality of the program:
+- Registration
+- Authorization
+- Add task
+- Delete task
+- Update task
 
 ## Distribute
 
@@ -27,6 +30,7 @@ Documentation Here
 
 ## Developers
 
-- [Delevoper Name](GitHub Profile Link)
+- [abkolia](https://github.com/abkolia)
 
 ## License
+Project To-DO-list is distributed under the MIT license.
