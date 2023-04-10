@@ -9,7 +9,7 @@
 <p align="center">
    <img src="https://img.shields.io/badge/Django%20version-4.1.6-blue" alt="Django Version">
    <img src="https://img.shields.io/badge/Version-v1.0%20(Alpha)-brightgreen" alt="Project Version">
-   <img src="" alt="License">
+   <img src="https://img.shields.io/badge/License-MIT-blueviolet" alt="License">
 </p>
 
 ## About
