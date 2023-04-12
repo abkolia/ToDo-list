@@ -25,7 +25,7 @@ The functionality of the program:
 
 ## Distribute
 
-- [Service Name](Page Link)
+- No distribute right now
 
 
 ## Developers
